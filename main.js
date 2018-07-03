@@ -16,8 +16,7 @@ $(window).on('load scroll resize', function(){
   });
 });
 
-// var work_url = "https://pclin2018.github.io/MyPortfolio/data.json";
-var work_url = "data.json";
+var work_url = "https://pclin2018.github.io/MyPortfolio/data.json";
 
 var vm = new Vue({
   el: "#app",
