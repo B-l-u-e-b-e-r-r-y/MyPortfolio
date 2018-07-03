@@ -16,6 +16,7 @@ $(window).on('load scroll resize', function(){
   });
 });
 
+// var work_url = "https://pclin2018.github.io/MyPortfolio/data.json";
 var work_url = "data.json";
 
 var vm = new Vue({
@@ -25,19 +26,9 @@ var vm = new Vue({
     detailmode: false,
     detaildata: {}
   },
-  // ready: function(){
-  //   console.log("載入資料...");
-  //   $.ajax({
-  //     url: work_url,
-  //     success: function(res){
-  //       this.works = JSON.parse(res);
-  //       console.log("載入成功...");
-  //     }
-  //   });
-  // },
   mounted: function(){
     $.get(work_url).then(function(res){
-      vm.works = JSON.parse(res);
+      vm.works = res;
     })
   },
   methods: {
