@@ -457,7 +457,8 @@ p {
   display: inline-block;
   color: rgba(255, 255, 255, 0);
   transition: 0.5s;
-  font-size: 20px;
+  font-size: 16px;
+  width: 100%;
 }
 .works_outer .works .detail_info {
   padding: 50px 0px;
