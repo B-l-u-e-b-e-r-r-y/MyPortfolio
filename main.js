@@ -16,20 +16,31 @@ $(window).on('load scroll resize', function(){
   });
 });
 
+// var work_url = "https://pclin2018.github.io/MyPortfolio/works.json";
 var work_url = "works.json";
 
 var vm = new Vue({
   el: "#app",
   data: {
-    works: "",
+    works: [],
     detailmode: false,
     detaildata: {}
   },
-  mounted: function(){
-    $.get(work_url).then(function(res){
-      vm.works = res;
-    })
+  ready: function(){
+    $.ajax({
+      url: work_url,
+      type: "GET",
+      dataType: "jsonp",
+      success: function (res){
+        vm.works = res;
+      }
+    }); 
   },
+  // mounted: function(){
+  //   $.get(work_url).then(function(res){
+  //     vm.works = res;
+  //   })
+  // },
   methods: {
     detail_mode: function(item){
       this.detailmode = true;
