@@ -1,4 +1,4 @@
-# MyPortfolio
-MyPortfolio / jQuery animate + Vue
+# Portfolio (Version 2018)
+Vue.js + jQuery animate
 <br>
-<a href="https://pclin2018.github.io/MyPortfolio/">Demo</a>
+<a href="https://B-l-u-e-b-e-r-r-y.github.io/Portfolio/">Demo</a>
